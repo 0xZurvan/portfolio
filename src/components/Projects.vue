@@ -155,7 +155,7 @@
   justify-content: flex-end;
   position: relative;
   right: 10%;
-  margin-top: 180px;
+  margin-top: 230px;
   background: linear-gradient(#a0baf7);
 }
 

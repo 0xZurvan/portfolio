@@ -31,13 +31,14 @@
 
 .header-title {
   font-family: "Inter", sans-serif;
-  font-size: 74px;
-  color: #ccd6f6;
+  font-size: 84px;
+  color: #64ffda;
   margin-bottom: 10px;
+  margin-top: 10%;
 }
 
 .header-title:hover {
-  color: #64ffda;
+  color: #ccd6f6;
 }
 
 .sub-header {
