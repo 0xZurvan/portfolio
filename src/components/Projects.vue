@@ -179,25 +179,24 @@
 .retro-ratz {
   display: flex;
   box-sizing: border-box;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .retro-content {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   position: relative;
-  right: 10%;
+  left: 8%;
 }
 
 .retro-content .sub-heading {
   font-family: "Inter", sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: normal;
   font-style: bold;
   color: #64ffda;
   position: relative;
-  top: 10%;
+  top: 12%;
 
 }
 
@@ -278,24 +277,24 @@
 .time {
   display: flex;
   box-sizing: border-box;
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
 
 .time-content {
   display: flex;
   flex-direction: column;
   position: relative;
-  left: 8%;
+  right: 10%;
 }
 
 .time-content .sub-heading {
   font-family: "Inter", sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: normal;
   font-style: bold;
   color: #64ffda;
   position: relative;
-  top: 10%;
+  top: 12%;
 
 }
 
@@ -376,7 +375,7 @@
 .astral-music {
   display: flex;
   box-sizing: border-box;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .astral-content {
@@ -384,17 +383,17 @@
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
-  right: 10%;
+  left: 8%;
 }
 
 .astral-content .sub-heading {
   font-family: "Inter", sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: normal;
   font-style: bold;
   color: #64ffda;
   position: relative;
-  top: 10%;
+  top: 12%;
 
 }
 

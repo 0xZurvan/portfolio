@@ -50,6 +50,9 @@ li {
 
 .nav-list a:hover {  
   color: #64ffda; 
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 4px;
   
 }
 
