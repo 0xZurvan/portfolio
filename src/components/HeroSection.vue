@@ -12,12 +12,6 @@
 
 
 <style scope>
-/**Heading */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
-/**Sub-title */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap");
-/**Text */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 
 .container {
   display: flex;
@@ -60,7 +54,7 @@
 
 .btn-hero {
   font-family: 'Inter', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   background-color: #112240;
   color: #64ffda;
   border-color: #64ffda;

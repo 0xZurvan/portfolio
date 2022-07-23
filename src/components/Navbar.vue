@@ -23,7 +23,6 @@
 
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
 .navbar {
   display: flex;

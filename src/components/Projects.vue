@@ -133,14 +133,6 @@
 
 
 <style scoped>
-/**Title */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
-
-/**Project names */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap");
-
-/**Text */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 
 .main-container {
   box-sizing: border-box;
@@ -218,8 +210,8 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   font-size: 16px;
-  max-width: 500px;
-  max-height: 500px;
+  width: 500px;
+  max-height: 200px;
   color: #a8b2d1;
   font-weight: normal;
   border: 1px solid #112240;
@@ -316,8 +308,8 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   font-size: 16px;
-  max-width: 500px;
-  max-height: 500px;
+  width: 500px;
+  max-height: 200px;
   color: #a8b2d1;
   font-weight: normal;
   border: 1px solid #112240;
@@ -415,8 +407,8 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   font-size: 16px;
-  max-width: 500px;
-  max-height: 500px;
+  width: 500px;
+  max-height: 200px;
   color: #a8b2d1;
   font-weight: normal;
   border: 1px solid #112240;
