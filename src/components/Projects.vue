@@ -138,6 +138,7 @@
   box-sizing: border-box;
 }
 
+/**Desktop */
 .title {
   display: flex;
   font-family: "Inter", sans-serif;
@@ -151,6 +152,28 @@
   background: linear-gradient(#a0baf7);
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .title {
+    font-size: 20px;
+    padding-right: 10px;
+    margin-top: 150px;
+    margin-bottom: 15%;
+    padding-bottom: 20px;
+  }
+}
+
+/**Tablet */
+@media screen and (min-width: 31.25em) and (max-width:  56.25em) {
+
+  .title {
+    font-size: 34px;
+    padding-right: 15px;
+  }
+}
+
+/**Desktop */
 .title::before {
   content: "";
   width: 30%;
@@ -161,19 +184,64 @@
   opacity: 0.5;
 }
 
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .title::before {
+    bottom: 12px;
+  }
+
+}
+
+/**Desktop */
 .projects-container {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .projects-container {
+    justify-content: center;
+  }
+}
+
+/**Tablet */
+@media screen and (min-width: 31.25em) and (max-width:  56.25em) {
+
+  .projects-container{
+    justify-content: center;
+  }
+}
+
 /** Retro Ratz project */
+
+/**Desktop */
 .retro-ratz {
   display: flex;
   box-sizing: border-box;
   justify-content: flex-start;
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .retro-ratz {
+    justify-content: center;
+  }
+}
+
+/**Tablet */
+@media screen and (min-width: 31.25em) and (max-width:  56.25em) {
+
+  .retro-ratz {
+    justify-content: center;
+    margin: 0px 90px 0px 10px;
+  }
+}
+
+/**Desktop */
 .retro-content {
   display: flex;
   flex-direction: column;
@@ -181,6 +249,17 @@
   left: 8%;
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .retro-content {
+    justify-content: center;
+    padding: 0px 80px 0px 20px;
+  }
+}
+
+
+/**Desktop */
 .retro-content .sub-heading {
   font-family: "Inter", sans-serif;
   font-size: 15px;
@@ -192,6 +271,16 @@
 
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .retro-content .sub-heading {
+    font-size: 10px;
+  }
+}
+
+
+/**Desktop */
 .retro-content .project-title {
   font-family: "Inter", sans-serif;
   font-size: 24px;
@@ -201,10 +290,21 @@
   bottom: -5%;
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .retro-content .project-title {
+    font-size: 16px;
+
+  }
+}
+
+
 .retro-content .project-title:hover {
   color: #64ffda;
 }
 
+/**Desktop */
 .retro-content .description-box {
   display: inline-flex;
   box-sizing: border-box;
@@ -222,6 +322,18 @@
 
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .retro-content .description-box {
+    font-size: 10px;
+    width: 300px;
+    max-height: 100px;
+
+  }
+}
+
+/**Desktop */
 .retro-content .stack {
   display: inline-flex;
   box-sizing: border-box;
@@ -231,6 +343,18 @@
   right: 8%;
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .retro-content .stack {
+    position: relative;
+    bottom: 5%;
+    right: 12%;
+    
+  }
+}
+
+/**Desktop */
 .retro-content .stack li {
   font-family: 'Inter', sans-serif;
   list-style-type: none;  
@@ -240,10 +364,22 @@
 
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .retro-content .stack li {
+    font-size: 8px;
+    margin-right: 5px;
+
+  }
+}
+
+
 .retro-content .stack li:hover {
   color: #64ffda;
 }
 
+/**Desktop */
 .retro-content .btn {
   font-family: 'Inter', sans-serif;
   background-color: #112240;
@@ -256,6 +392,18 @@
   border-radius: 5px;
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .retro-content .btn {
+    font-size: 10px;
+    padding: 10px;
+    width: 30%;
+
+  }
+}
+
+
 .btn:hover {
   color: #a8b2d1;
   border-color: #a8b2d1;
@@ -264,14 +412,34 @@
 
 /**End of Retro Ratz */
 
+
 /**Time Project */
 
+/**Desktop */
 .time {
   display: flex;
   box-sizing: border-box;
   justify-content: flex-end;
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .time {
+    justify-content: center;
+  }
+}
+
+/**Tablet */
+@media screen and (min-width: 31.25em) and (max-width:  56.25em) {
+
+  .time {
+    justify-content: center;
+    margin: 0px 0px 0px 140px;
+  }
+}
+
+/**Desktop */
 .time-content {
   display: flex;
   flex-direction: column;
@@ -279,6 +447,17 @@
   right: 10%;
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .time-content {
+    justify-content: center;
+    padding: 0px 20px 0px 80px;
+    right: 8%;
+  }
+}
+
+/**Desktop */
 .time-content .sub-heading {
   font-family: "Inter", sans-serif;
   font-size: 15px;
@@ -290,6 +469,15 @@
 
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .time-content .sub-heading {
+    font-size: 10px;
+  }
+}
+
+/**Desktop */
 .time-content .project-title {
   font-family: "Inter", sans-serif;
   font-size: 24px;
@@ -299,10 +487,20 @@
   bottom: -5%;
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .time-content .project-title {
+    font-size: 16px;
+
+  }
+}
+
 .time-content .project-title:hover {
   color: #64ffda;
 }
 
+/**Desktop */
 .time-content .description-box {
   display: inline-flex;
   box-sizing: border-box;
@@ -320,6 +518,18 @@
 
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .time-content .description-box {
+    font-size: 10px;
+    width: 300px;
+    max-height: 100px;
+
+  }
+}
+
+/**Desktop */
 .time-content .stack {
   display: inline-flex;
   box-sizing: border-box;
@@ -329,6 +539,18 @@
   right: 8%;
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .time-content .stack {
+    position: relative;
+    bottom: 5%;
+    right: 12%;
+    
+  }
+}
+
+/**Desktop */
 .time-content .stack li {
   font-family: 'Inter', sans-serif;
   list-style-type: none;  
@@ -338,10 +560,21 @@
 
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .time-content .stack li {
+    font-size: 8px;
+    margin-right: 5px;
+
+  }
+}
+
 .time-content .stack li:hover {
   color: #64ffda;
 }
 
+/**Desktop */
 .time-content .btn {
   font-family: 'Inter', sans-serif;
   background-color: #112240;
@@ -354,6 +587,17 @@
   border-radius: 5px;
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .time-content .btn {
+    font-size: 10px;
+    padding: 10px;
+    width: 30%;
+
+  }
+}
+
 .time-content .btn:hover {
   color: #a8b2d1;
   border-color: #a8b2d1;
@@ -362,14 +606,34 @@
 
 /**End of Time Project */
 
+
 /**Music project */
 
+/**Desktop */
 .astral-music {
   display: flex;
   box-sizing: border-box;
   justify-content: flex-start;
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .astral-music {
+    justify-content: center;
+  }
+}
+
+/**Tablet */
+@media screen and (min-width: 31.25em) and (max-width:  56.25em) {
+
+  .astral-music {
+    justify-content: center;
+    margin: 0px 90px 0px 10px;
+  }
+}
+
+/**Desktop */
 .astral-content {
   display: flex;
   flex-direction: column;
@@ -378,6 +642,17 @@
   left: 8%;
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .astral-content {
+    justify-content: center;
+    padding: 0px 80px 0px 20px;
+  }
+}
+
+
+/**Desktop */
 .astral-content .sub-heading {
   font-family: "Inter", sans-serif;
   font-size: 15px;
@@ -389,6 +664,15 @@
 
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .astral-content .sub-heading {
+    font-size: 10px;
+  }
+}
+
+/**Desktop */
 .astral-content .project-title {
   font-family: "Inter", sans-serif;
   font-size: 24px;
@@ -398,10 +682,20 @@
   bottom: -5%;
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .astral-content .project-title {
+    font-size: 16px;
+
+  }
+}
+
 .astral-content .project-title:hover {
   color: #64ffda;
 }
 
+/**Desktop */
 .astral-content .description-box {
   display: inline-flex;
   box-sizing: border-box;
@@ -419,6 +713,18 @@
 
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .astral-content .description-box {
+    font-size: 10px;
+    width: 300px;
+    max-height: 100px;
+
+  }
+}
+
+/**Desktop */
 .astral-content .stack {
   display: inline-flex;
   box-sizing: border-box;
@@ -428,6 +734,18 @@
   right: 8%;
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .astral-content .stack {
+    position: relative;
+    bottom: 5%;
+    right: 12%;
+    
+  }
+}
+
+/**Desktop */
 .astral-content .stack li {
   font-family: 'Inter', sans-serif;
   list-style-type: none;  
@@ -437,10 +755,21 @@
 
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .astral-content .stack li {
+    font-size: 8px;
+    margin-right: 5px;
+
+  }
+}
+
 .astral-content .stack li:hover {
   color: #64ffda;
 }
 
+/**Desktop */
 .astral-content .btn {
   font-family: 'Inter', sans-serif;
   background-color: #112240;
@@ -451,6 +780,17 @@
   position: relative;
   bottom: 5%;
   border-radius: 5px;
+}
+
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .astral-content .btn {
+    font-size: 10px;
+    padding: 10px;
+    width: 30%;
+
+  }
 }
 
 .btn:hover {

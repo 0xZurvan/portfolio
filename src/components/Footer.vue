@@ -7,6 +7,7 @@
 
 <style scoped>
 
+/**Desktop */
 .footer {
   display: flex;
   box-sizing: border-box;
@@ -15,6 +16,16 @@
   padding: 20px 0px 5px 0px;
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/**Desktop */
 email {
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -28,10 +39,21 @@ email {
   
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  email {
+    position: relative;
+    left: 11%;
+    top: 20px;
+  }
+}
+
 email:hover {
   color: #a8b2d1;
 }
 
+/**Desktop */
 .copyright {
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -43,6 +65,16 @@ email:hover {
   left: 4%;
   top: 20px;
   bottom: 18px;
+}
+
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .copyright {
+    position: relative;
+    left: 22%;
+    top: 20px;
+  }
 }
 
 .copyright:hover {

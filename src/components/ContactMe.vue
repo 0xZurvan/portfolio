@@ -16,6 +16,7 @@
   margin-bottom: 15%;
 }
 
+/**Desktop */
 .contact-container .sub-heading {
   font-family: "Inter", sans-serif;
   font-size: 18px;
@@ -25,6 +26,24 @@
   margin-top: 15%;
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .contact-container .sub-heading {
+    font-size: 10px;
+  }
+}
+
+/**Tablet */
+@media screen and (min-width: 31.25em) and (max-width:  56.25em) {
+
+  .contact-container .sub-heading {
+    font-size: 15px;
+    padding-right: 20px;
+  }
+}
+
+/**Desktop */
 .contact-container .heading {
   display: flex;
   width: 100%;
@@ -36,6 +55,26 @@
   top: -50px;
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .contact-container .heading {
+    font-size: 20px;
+    top: -30px;
+    margin-bottom: 20px;
+  }
+}
+
+/**Tablet */
+@media screen and (min-width: 31.25em) and (max-width:  56.25em) {
+
+  .contact-container .heading {
+    font-size: 32px;
+    padding-right: 20px;
+  }
+}
+
+/**Desktop */
 .heading::before {
   content: "";
   width: 30%;
@@ -46,6 +85,15 @@
   opacity: 0.5;
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .heading::before {
+    width: 20%;;
+  }
+}
+
+/**Desktop */
 .heading::after {
   content: "";
   width: 30%;
@@ -56,10 +104,19 @@
   opacity: 0.5;
 }
 
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .heading::after {
+    width: 20%;
+  }
+}
+
 .contact-container .heading:hover {
   color: #64ffda;
 }
 
+/**Desktop */
 .contact-container .btn {
   font-family: 'Inter', sans-serif;
   background-color: #112240;
@@ -71,6 +128,28 @@
   border-radius: 5px;
   position: relative;
   top: -50px;
+}
+
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+
+  .contact-container .btn {
+    font-size: 8px;
+    width: 40%;
+    padding: 10px;
+    position: relative;
+    top: -30px;
+  }
+}
+
+/**Tablet */
+@media screen and (min-width: 31.25em) and (max-width:  56.25em) {
+
+  .contact-container .btn {
+    font-size: 12px;
+    width: 30%;
+
+  }
 }
 
 .contact-container .btn:hover {
