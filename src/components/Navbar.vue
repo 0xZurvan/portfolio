@@ -1,8 +1,5 @@
 <template>
     <nav class="navbar">
-      <div class="logo">
-        <img src="../assets/logo.png" alt="logo">
-      </div>
         <ul class="nav-list">
             <li>
               <p>
@@ -34,46 +31,18 @@
 .navbar {
   display: flex;
   margin-top: 30px;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
-/**Desktop */
-.logo {
-  position: relative;
-  bottom: 45px;
-  left: 60px;
-}
-
-/**Mobile */
-@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
-
-  .logo {
-    position: relative;
-    bottom: 45px;
-    right: 200px;
-    margin-right: 20px;
-  }
-}
-
-/**Tablet */
-@media screen and (min-width: 31.25em) and (max-width:  56.25em) {
-
-  .logo {
-    position: relative;
-    bottom: 60%;
-    right: 90px;
-    margin-right: 20px;
-  }
-}
 
 /**Desktop */
 li {
   display: inline-flex;
-  margin-right: 25px;
-  padding-right: 25px;
+  margin-left: 25px;
+  padding-left: 25px;
   flex-direction: row;
   position: relative;
-  right: 10%;
+  left: 10%;
 }
 
 /** Mobile */
@@ -82,10 +51,10 @@ li {
   li {
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
-    padding-left: 10px;
+    margin-left: 5px;
+    padding-left: 5px;
     position: relative;
-    right: 2%;
+    left: 2%;
   }
 
 }
@@ -99,7 +68,7 @@ li {
     scroll-padding-left: 15px;
     flex-shrink: 3;
     position: relative;
-    right: 4%;
+    left: 4%;
   }
 
 }
@@ -120,8 +89,7 @@ li {
   .nav-list a  {
     font-size: 10px;
     position: relative;
-    right: 10px;
-    line-height: -20px;
+    right: 30px;
   }
 }
 
@@ -132,7 +100,7 @@ li {
     font-size: 14px;
     font-size: 10px;
     position: relative;
-    right: 10px;
+    right: 30px;
   }
 }
 

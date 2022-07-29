@@ -43,6 +43,7 @@ email {
 @media screen and (min-width: 12.5em) and (max-width: 31.25em) {
 
   email {
+    font-size: 10px;
     position: relative;
     left: 11%;
     top: 20px;
@@ -71,6 +72,7 @@ email:hover {
 @media screen and (min-width: 12.5em) and (max-width: 31.25em) {
 
   .copyright {
+    font-size: 10px;
     position: relative;
     left: 22%;
     top: 20px;

@@ -55,8 +55,8 @@
 @media screen and (min-width: 31.25em) and (max-width:  56.25em) {
 
   .header-title {
-    font-size: 64px;
-    padding-right: 20px;
+    font-size: 58px;
+    margin-right: 20px;
   }
 }
 
@@ -87,8 +87,8 @@
 
   .sub-header {
     flex-wrap: wrap;
-    font-size: 44px;
-    padding-right: 20px;
+    font-size: 38px;
+    margin-right: 20px;
   }
 }
 
