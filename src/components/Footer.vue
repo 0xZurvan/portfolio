@@ -11,7 +11,7 @@
 .footer {
   display: flex;
   box-sizing: border-box;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: baseline;
   padding: 20px 0px 5px 0px;
 }
@@ -22,6 +22,8 @@
   .footer {
     flex-direction: column;
     justify-content: center;
+    margin: 10px auto;
+
   }
 }
 
@@ -34,7 +36,6 @@ email {
   font-weight: normal;
   margin-bottom: 30px;
   position: relative;
-  right: 5%;
   top: 20px;
   
 }
@@ -45,8 +46,7 @@ email {
   email {
     font-size: 10px;
     position: relative;
-    left: 11%;
-    top: 20px;
+    top: -10px;
   }
 }
 
@@ -63,9 +63,8 @@ email:hover {
   font-weight: normal;
   margin-bottom: 30px;
   position: relative;
-  left: 4%;
   top: 20px;
-  bottom: 18px;
+  bottom: 10px;
 }
 
 /**Mobile */
@@ -74,8 +73,8 @@ email:hover {
   .copyright {
     font-size: 10px;
     position: relative;
-    left: 22%;
-    top: 20px;
+    top: -20px;
+    margin: 0 auto;
   }
 }
 

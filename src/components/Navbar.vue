@@ -87,7 +87,7 @@ li {
 @media screen and (min-width: 12.5em) and (max-width: 31.25em) {
 
   .nav-list a  {
-    font-size: 10px;
+    font-size: 12px;
     position: relative;
     right: 30px;
   }
