@@ -1,9 +1,11 @@
 <template>
-  <Navbar />
-  <HeroSection />
-  <Projects />
-  <ContactMe />
-  <Footer />
+  <div class="container">
+    <Navbar />
+    <HeroSection />
+    <Projects />
+    <ContactMe />
+    <Footer />
+  </div>
 </template>
 
 <script setup>
@@ -31,6 +33,28 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+}
+
+/**Desktop */
+.container {
+  max-width: 1000px;
+  margin: 0px auto;
+}
+
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+  .container {
+    width: 350px;
+    margin: 0px auto;
+  }
+}
+
+/**Tablet */
+@media screen and (min-width: 31.25em) and (max-width: 56.25em) {
+   .container {
+    width: 750px;
+    margin: 0px auto;
+  }
 }
 
 #app {

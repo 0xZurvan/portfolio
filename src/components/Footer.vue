@@ -5,6 +5,7 @@
   </div>
 </template>
 
+
 <style scoped>
 
 /**Desktop */
@@ -21,7 +22,7 @@
 
   .footer {
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     margin: 10px auto;
 
   }
@@ -47,6 +48,7 @@ email {
     font-size: 10px;
     position: relative;
     top: -10px;
+    margin-bottom: 0px;
   }
 }
 
@@ -73,7 +75,8 @@ email:hover {
   .copyright {
     font-size: 10px;
     position: relative;
-    top: -20px;
+    top: -10px;
+    bottom: 0px;
     margin: 0 auto;
   }
 }

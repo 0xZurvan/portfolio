@@ -9,10 +9,12 @@
           <h4 class="sub-heading">Featured Project</h4>
           <h3 class="project-title">Retro Ratz</h3>
           <p class="description-box">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nunc
-            nunc,mattis non aliquet et viverra eu risus.Etiam sed feugiat libero, id
-            suscipit mi.Sed sit amet cursus ante, nec sodales lorem. Sed sit amet cursus
+            NFT project with a simple and fun dynamic game. Evolving/leveling up
+            pixelated rats art into a full retro rat by correctly answering the
+            question at each level. At the end you can burn your rat to receive 
+            Aztral tokens.
           </p>
+          <p class="stack-title">Technology I collaborated with:</p>
           <ul class="stack">
             <li>
               <p>
@@ -36,22 +38,24 @@
             </li>
             <li>
               <p>
-               JavaScript
+               Chai
               </p>
             </li>
           </ul>
-          <button class="btn">See project</button>
+          <button class="btn" @click="retroRatz">See project</button>
         </div>
       </div>
       <div class="time">
         <div class="time-content">
           <h4 class="sub-heading">Featured Project</h4>
-          <h3 class="project-title">Time Travelers</h3>
+          <h3 class="project-title">Johnny's Time</h3>
           <p class="description-box">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nunc
-            nunc,mattis non aliquet et viverra eu risus.Etiam sed feugiat libero, id
-            suscipit mi.Sed sit amet cursus ante, nec sodales lorem. Sed sit amet cursus
+            NFT project with a collection of only 108 with the genetics of Johnny Deep.
+            Each person has a total of 5 variants from young to old. A simple game that puts
+            at the edge of the fate of the owners by running a randomized mechanism that freezes
+            whoever tokens get selected.
           </p>
+          <p class="stack-title">Technology I collaborated with:</p>
           <ul class="stack">
             <li>
               <p>
@@ -75,61 +79,62 @@
             </li>
             <li>
               <p>
-               JavaScript
+               Chai
+              </p>
+            </li>
+            <li>
+              <p>
+               Vue.js
+              </p>
+            </li>
+            <li>
+              <p>
+               Tailwind
+              </p>
+            </li>
+            <li>
+              <p>
+               Ether.js
               </p>
             </li>
           </ul>
           <button class="btn">See project</button>
         </div>
       </div>
-      <div class="astral-music">
-        <div class="astral-content">
+      <div class="aztral">
+        <div class="aztral-content">
           <h4 class="sub-heading">Featured Project</h4>
-          <h3 class="project-title">Astral Music</h3>
+          <h3 class="project-title">Aztral</h3>
           <p class="description-box">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nunc
-            nunc,mattis non aliquet et viverra eu risus.Etiam sed feugiat libero, id
-            suscipit mi.Sed sit amet cursus ante, nec sodales lorem. Sed sit amet cursus
+            A development studio and collective of creator's striving to make fun and innovative
+            products with technologies to transform the creator economy with innovative tools and new
+            approaches to content distribution and monetization.
           </p>
+          <p class="stack-title">Technology I collaborated with:</p>
           <ul class="stack">
             <li>
               <p>
                Solidity
               </p>
             </li>
-            <li>
-              <p>
-               ERC1155
-              </p>
-            </li>
-            <li>
-              <p>
-               ERC20
-              </p>
-            </li>
-             <li>
-              <p>
-               ERC721
-              </p>
-            </li>
-            <li>
-              <p>
-               Hardhat
-              </p>
-            </li>
-            <li>
-              <p>
-               JavaScript
-              </p>
-            </li>
           </ul>
-          <button class="btn">See project</button>
+          <button class="btn" @click="aztralNetwork">See project</button>
         </div>
       </div>
     </div>
   </div>
 </template>
 
+<script setup>
+
+const retroRatz = () => {
+  window.location.href = 'https://ratz.aztral.network/';
+}
+
+const aztralNetwork = () => {
+  window.location.href = 'https://aztral.network/';
+}
+</script>
 
 
 <style scoped>
@@ -143,12 +148,10 @@
   display: flex;
   font-family: "Inter", sans-serif;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 42px;
   color: #ccd6f6;
   justify-content: flex-end;
-  position: relative;
-  right: 10%;
-  margin-top: 230px;
+  margin-top: 200px;
   background: linear-gradient(#a0baf7);
 }
 
@@ -156,11 +159,10 @@
 @media screen and (min-width: 12.5em) and (max-width: 31.25em) {
 
   .title {
-    font-size: 20px;
-    padding-right: 10px;
-    margin-top: 150px;
-    margin-bottom: 15%;
-    padding-bottom: 20px;
+    font-size: 18px;
+    margin-top: 90px;
+    margin-bottom: 10%;
+    justify-content: center;
   }
 }
 
@@ -168,15 +170,17 @@
 @media screen and (min-width: 31.25em) and (max-width:  56.25em) {
 
   .title {
-    font-size: 34px;
-    padding-right: 15px;
+    font-size: 28px;
+    margin-top: 200px;
+    justify-content: center;
+    
   }
 }
 
 /**Desktop */
 .title::before {
   content: "";
-  width: 30%;
+  width: 40%;
   position: relative;
   bottom: 18px;
   right: 20px;
@@ -184,10 +188,20 @@
   opacity: 0.5;
 }
 
+/**Mobile */
 @media screen and (min-width: 12.5em) and (max-width: 31.25em) {
 
   .title::before {
-    bottom: 12px;
+   width: 0%;
+  }
+
+}
+
+/**Tablet */
+@media screen and (min-width: 31.25em) and (max-width:  56.25em) {
+
+  .title::before {
+    width: 0%;
   }
 
 }
@@ -203,7 +217,7 @@
 @media screen and (min-width: 12.5em) and (max-width: 31.25em) {
 
   .projects-container {
-    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -224,37 +238,19 @@
   justify-content: flex-start;
 }
 
-/**Mobile */
-@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
-
-  .retro-ratz {
-    justify-content: center;
-  }
-}
-
-/**Tablet */
-@media screen and (min-width: 31.25em) and (max-width:  56.25em) {
-
-  .retro-ratz {
-    justify-content: center;
-    margin: 0px 90px 0px 10px;
-  }
-}
 
 /**Desktop */
 .retro-content {
   display: flex;
   flex-direction: column;
-  position: relative;
-  left: 8%;
+ 
 }
 
 /**Mobile */
 @media screen and (min-width: 12.5em) and (max-width: 31.25em) {
 
   .retro-content {
-    justify-content: center;
-    padding: 0px 80px 0px 20px;
+    align-items: flex-start;
   }
 }
 
@@ -334,9 +330,26 @@
 }
 
 /**Desktop */
+.retro-content .stack-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #a8b2d1; 
+}
+
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+  .retro-content .stack-title {
+    font-size: 10px;
+  }
+}
+
+
+/**Desktop */
 .retro-content .stack {
-  display: inline-flex;
+  display: flex;
   box-sizing: border-box;
+  flex-direction: row;
   flex-wrap: wrap;
   position: relative;
   bottom: 5%;
@@ -422,38 +435,18 @@
   justify-content: flex-end;
 }
 
-/**Mobile */
-@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
-
-  .time {
-    justify-content: center;
-  }
-}
-
-/**Tablet */
-@media screen and (min-width: 31.25em) and (max-width:  56.25em) {
-
-  .time {
-    justify-content: center;
-    margin: 0px 0px 0px 140px;
-  }
-}
 
 /**Desktop */
 .time-content {
   display: flex;
   flex-direction: column;
-  position: relative;
-  right: 10%;
 }
 
 /**Mobile */
 @media screen and (min-width: 12.5em) and (max-width: 31.25em) {
 
   .time-content {
-    justify-content: center;
-    padding: 0px 20px 0px 80px;
-    right: 8%;
+    align-items: flex-end;
   }
 }
 
@@ -502,7 +495,6 @@
 
 /**Desktop */
 .time-content .description-box {
-  display: inline-flex;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -530,10 +522,25 @@
 }
 
 /**Desktop */
+.time-content .stack-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #a8b2d1; 
+}
+
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+  .time-content .stack-title {
+    font-size: 10px;
+  }
+}
+
+/**Desktop */
 .time-content .stack {
-  display: inline-flex;
+  display: flex;
   box-sizing: border-box;
-  flex-wrap: wrap;
+  flex-direction: row;
   position: relative;
   bottom: 5%;
   right: 8%;
@@ -545,7 +552,7 @@
   .time-content .stack {
     position: relative;
     bottom: 5%;
-    right: 12%;
+    left: 2%;
     
   }
 }
@@ -607,53 +614,33 @@
 /**End of Time Project */
 
 
-/**Music project */
+/**Aztral project */
 
 /**Desktop */
-.astral-music {
+.aztral {
   display: flex;
   box-sizing: border-box;
   justify-content: flex-start;
 }
 
-/**Mobile */
-@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
-
-  .astral-music {
-    justify-content: center;
-  }
-}
-
-/**Tablet */
-@media screen and (min-width: 31.25em) and (max-width:  56.25em) {
-
-  .astral-music {
-    justify-content: center;
-    margin: 0px 90px 0px 10px;
-  }
-}
 
 /**Desktop */
-.astral-content {
+.aztral-content {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  position: relative;
-  left: 8%;
 }
 
 /**Mobile */
 @media screen and (min-width: 12.5em) and (max-width: 31.25em) {
 
-  .astral-content {
-    justify-content: center;
-    padding: 0px 80px 0px 20px;
+  .aztral-content {
+    align-items: flex-start;
   }
 }
 
 
 /**Desktop */
-.astral-content .sub-heading {
+.aztral-content .sub-heading {
   font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -667,13 +654,13 @@
 /**Mobile */
 @media screen and (min-width: 12.5em) and (max-width: 31.25em) {
 
-  .astral-content .sub-heading {
+  .aztral-content .sub-heading {
     font-size: 10px;
   }
 }
 
 /**Desktop */
-.astral-content .project-title {
+.aztral-content .project-title {
   font-family: "Inter", sans-serif;
   font-size: 24px;
   color: #ccd6f6;
@@ -685,19 +672,19 @@
 /**Mobile */
 @media screen and (min-width: 12.5em) and (max-width: 31.25em) {
 
-  .astral-content .project-title {
+  .aztral-content .project-title {
     font-size: 16px;
 
   }
 }
 
-.astral-content .project-title:hover {
+.aztral-content .project-title:hover {
   color: #64ffda;
 }
 
 /**Desktop */
-.astral-content .description-box {
-  display: inline-flex;
+.aztral-content .description-box {
+  display: flex;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -716,7 +703,7 @@
 /**Mobile */
 @media screen and (min-width: 12.5em) and (max-width: 31.25em) {
 
-  .astral-content .description-box {
+  .aztral-content .description-box {
     font-size: 10px;
     width: 300px;
     max-height: 100px;
@@ -725,10 +712,25 @@
 }
 
 /**Desktop */
-.astral-content .stack {
-  display: inline-flex;
+.aztral-content .stack-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #a8b2d1; 
+}
+
+/**Mobile */
+@media screen and (min-width: 12.5em) and (max-width: 31.25em) {
+  .aztral-content .stack-title {
+    font-size: 10px;
+  }
+}
+
+/**Desktop */
+.aztral-content .stack {
+  display: flex;
+  flex-direction: row;
   box-sizing: border-box;
-  flex-wrap: wrap;
   position: relative;
   bottom: 5%;
   right: 8%;
@@ -737,7 +739,7 @@
 /**Mobile */
 @media screen and (min-width: 12.5em) and (max-width: 31.25em) {
 
-  .astral-content .stack {
+  .aztral-content .stack {
     position: relative;
     bottom: 5%;
     right: 12%;
@@ -746,7 +748,7 @@
 }
 
 /**Desktop */
-.astral-content .stack li {
+.aztral-content .stack li {
   font-family: 'Inter', sans-serif;
   list-style-type: none;  
   color: #a8b2d1; 
@@ -758,19 +760,19 @@
 /**Mobile */
 @media screen and (min-width: 12.5em) and (max-width: 31.25em) {
 
-  .astral-content .stack li {
+  .aztral-content .stack li {
     font-size: 8px;
     margin-right: 5px;
 
   }
 }
 
-.astral-content .stack li:hover {
+.aztral-content .stack li:hover {
   color: #64ffda;
 }
 
 /**Desktop */
-.astral-content .btn {
+.aztral-content .btn {
   font-family: 'Inter', sans-serif;
   background-color: #112240;
   color: #64ffda;
@@ -785,7 +787,7 @@
 /**Mobile */
 @media screen and (min-width: 12.5em) and (max-width: 31.25em) {
 
-  .astral-content .btn {
+  .aztral-content .btn {
     font-size: 10px;
     padding: 10px;
     width: 30%;
@@ -799,6 +801,6 @@
 
 }
 
-/**End of Music Project*/
+/**End of Aztral project*/
 
 </style>

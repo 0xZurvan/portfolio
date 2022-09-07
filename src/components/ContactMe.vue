@@ -2,18 +2,27 @@
     <div class="contact-container">
       <h4 class="sub-heading">What are you waiting for?</h4>
       <h3 class="heading"> ¡ Don't get shy !</h3>
-      <button class="btn">Say Hi!</button>
+      <button class="btn" @click="sendEmail">Say Hi!</button>
     </div>
 </template>
+
+<script setup>
+
+const sendEmail =  () => {
+  window.location.href = 'mailto:isaachernandezeseverino@gmail.com';
+}
+
+</script>
 
 <style scoped>
 
 .contact-container {
-  display: inline-flex;
+  display: flex;
   box-sizing: border-box;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
+  margin-top: 10%;
 }
 
 /**Desktop */
@@ -39,7 +48,6 @@
 
   .contact-container .sub-heading {
     font-size: 15px;
-    padding-right: 20px;
   }
 }
 
@@ -47,7 +55,7 @@
 .contact-container .heading {
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
   font-family: "Inter", sans-serif;
   font-size: 42px;
   color: #ccd6f6;
@@ -59,7 +67,7 @@
 @media screen and (min-width: 12.5em) and (max-width: 31.25em) {
 
   .contact-container .heading {
-    font-size: 20px;
+    font-size: 18px;
     top: -30px;
     margin-bottom: 20px;
   }
@@ -70,7 +78,6 @@
 
   .contact-container .heading {
     font-size: 32px;
-    padding-right: 20px;
   }
 }
 
@@ -78,7 +85,7 @@
 .heading::before {
   content: "";
   width: 30%;
-  margin-left: 10px;
+  margin-left: 20px;
   position: relative;
   bottom: 18px;
   border-bottom: 1px solid #ccd6f6;
@@ -89,15 +96,26 @@
 @media screen and (min-width: 12.5em) and (max-width: 31.25em) {
 
   .heading::before {
-    width: 20%;;
+    width: 0%;
+
   }
+}
+
+/**Tablet */
+@media screen and (min-width: 31.25em) and (max-width:  56.25em) {
+
+  .heading::before {
+    width: 0%;
+
+  }
+
 }
 
 /**Desktop */
 .heading::after {
   content: "";
   width: 30%;
-  margin-right: 10px;
+  margin-right: 20px;
   position: relative;
   bottom: 18px;
   border-bottom: 1px solid #ccd6f6;
@@ -108,9 +126,21 @@
 @media screen and (min-width: 12.5em) and (max-width: 31.25em) {
 
   .heading::after {
-    width: 20%;
+    width: 0%;
   }
 }
+
+/**Tablet */
+@media screen and (min-width: 31.25em) and (max-width:  56.25em) {
+
+  .heading::after {
+    width: 0%;
+
+  }
+
+}
+
+
 
 .contact-container .heading:hover {
   color: #64ffda;

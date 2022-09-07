@@ -1,36 +1,47 @@
 <template>
-  <div class="container">
+  <div class="hero-container">
     <h1 class="header-title">Isaac Hernández.</h1>
     <h2 class="sub-header">Bulding things for the new web.</h2>
     <p class="text">
       I'm a passinate and young developer, focused on web 3 development. <br />
       Wishing to make fun and useful stuff for you. Let's do this!
     </p>
-    <button class="btn-hero">Say Hi!</button>
+    <button class="btn-hero" @click="sendEmail">Say Hi!</button>
   </div>
 </template>
+
+
+<script setup>
+
+const sendEmail =  () => {
+  window.location.href = 'mailto:isaachernandezeseverino@gmail.com';
+}
+ 
+
+</script>
 
 
 <style scope>
 
 /**Desktop */
-.container {
+.hero-container {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  position: relative;
-  left: 10%;
 }
 
+/**Mobile */
 @media screen and (min-width: 12.5em) and (max-width: 31.25em) {
-
-  .container {
-    padding-right: 40px;
+  .hero-container {
+    align-items: flex-start;
   }
 }
 
+/**Tablet */
+@media screen and (min-width: 31.25em) and (max-width: 56.25em) {
+  .hero-container {
+    align-items: flex-start;
+  }
+}
 
 
 /**Desktop */
@@ -38,16 +49,16 @@
   font-family: "Inter", sans-serif;
   font-size: 84px;
   color: #64ffda;
-  margin-bottom: 10px;
-  margin-top: 10%;
+  margin-bottom: 5px;
+  margin-top: 20%;
 }
 
 /**Mobile */
 @media screen and (min-width: 12.5em) and (max-width: 31.25em) {
 
   .header-title {
-    font-size: 44px;
-    padding-right: 20px;
+    font-size: 42px;
+    margin-top: 12%;
   }
 }
 
@@ -55,8 +66,8 @@
 @media screen and (min-width: 31.25em) and (max-width:  56.25em) {
 
   .header-title {
-    font-size: 58px;
-    margin-right: 20px;
+    font-size: 68px;
+    margin-top: 20%;
   }
 }
 
@@ -77,8 +88,7 @@
 @media screen and (min-width: 12.5em) and (max-width: 31.25em) {
 
   .sub-header {
-    font-size: 24px;
-    padding-right: 20px;
+    font-size: 28px;
   }
 }
 
@@ -86,9 +96,7 @@
 @media screen and (min-width: 31.25em) and (max-width:  56.25em) {
 
   .sub-header {
-    flex-wrap: wrap;
     font-size: 38px;
-    margin-right: 20px;
   }
 }
 
@@ -107,7 +115,6 @@
 
   .text {
     font-size: 10px;
-    padding-right: 20px;
   }
 }
 
@@ -116,7 +123,7 @@
 
   .text {
     flex-wrap: wrap;
-    font-size: 14px;
+    font-size: 12px;
     padding-right: 20px;
   }
 }
@@ -151,6 +158,7 @@
   .btn-hero {
     font-size: 12px;
     width: 30%;
+    padding: 15px;
 
   }
 }
